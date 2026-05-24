@@ -2,10 +2,14 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    {
-      "source": "/((?!assets/|robots.txt|sitemap.xml).*)",
-      "destination": "/index.html"
-    }
+    { "source": "/services", "destination": "/index.html" },
+    { "source": "/lawn-mowing-live-oak-fl", "destination": "/index.html" },
+    { "source": "/acreage-mowing-live-oak-fl", "destination": "/index.html" },
+    { "source": "/handyman-services-live-oak-fl", "destination": "/index.html" },
+    { "source": "/about", "destination": "/index.html" },
+    { "source": "/service-area", "destination": "/index.html" },
+    { "source": "/blog", "destination": "/index.html" },
+    { "source": "/contact", "destination": "/index.html" }
   ],
   "headers": [
     {
