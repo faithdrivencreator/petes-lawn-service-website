@@ -1,0 +1,1126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pete's Lawn Service | Lawn Care in Live Oak, FL</title>
+    <meta
+      name="description"
+      content="Owner-operated lawn mowing, acreage mowing, seasonal cleanup, and handyman help for Live Oak, FL and nearby rural properties."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pete's Lawn Service | Lawn Care in Live Oak, FL" />
+    <meta
+      property="og:description"
+      content="Practical owner-operated lawn service for mowing, acreage upkeep, cleanup, and handyman help around Live Oak, FL."
+    />
+    <meta property="og:url" content="/" />
+    <meta property="og:site_name" content="Pete's Lawn Service" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:image"
+      content="https://www.peteslawnservice.com/assets/hero-rural-property.jpg"
+    />
+    <meta name="theme-color" content="#254332" />
+    <link rel="canonical" href="/" />
+    <link
+      rel="icon"
+      href="/assets/pls-logo.png"
+    />
+    <style>
+      :root {
+        --green-950: #102319;
+        --green-900: #193624;
+        --green-800: #254332;
+        --green-700: #31573e;
+        --grass: #6d8d45;
+        --leaf: #94b969;
+        --gold: #d6a548;
+        --rust: #9b5a2f;
+        --sky: #d9ecf0;
+        --paper: #fbfaf4;
+        --paper-2: #f3efdf;
+        --white: #ffffff;
+        --ink: #182019;
+        --muted: #5e695d;
+        --line: rgba(24, 32, 25, 0.14);
+        --shadow: 0 18px 46px rgba(16, 35, 25, 0.14);
+        --radius: 8px;
+        --max: 1160px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family:
+          Aptos, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.6;
+      }
+
+      body.menu-open {
+        overflow: hidden;
+      }
+
+      img,
+      svg {
+        max-width: 100%;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      button,
+      input,
+      select,
+      textarea {
+        font: inherit;
+      }
+
+      .skip-link {
+        position: absolute;
+        left: 16px;
+        top: -80px;
+        z-index: 100;
+        padding: 10px 14px;
+        background: var(--gold);
+        color: var(--green-950);
+        border-radius: var(--radius);
+        font-weight: 800;
+      }
+
+      .skip-link:focus {
+        top: 16px;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+        background: rgba(16, 35, 25, 0.94);
+        color: var(--white);
+        backdrop-filter: blur(16px);
+      }
+
+      .nav-shell {
+        width: min(var(--max), calc(100% - 32px));
+        min-height: 74px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .brand-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 900;
+        line-height: 1.05;
+      }
+
+      .logo-mark {
+        width: 46px;
+        height: 46px;
+        flex: 0 0 auto;
+        border-radius: var(--radius);
+        object-fit: cover;
+        filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.18));
+      }
+
+      .brand-name {
+        display: block;
+        font-size: 18px;
+        letter-spacing: 0;
+      }
+
+      .brand-place {
+        display: block;
+        color: #cfe7b2;
+        font-size: 12px;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      .nav-links a {
+        padding: 10px 9px;
+        border-radius: var(--radius);
+        color: rgba(255, 255, 255, 0.86);
+        font-size: 14px;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .nav-links a:hover,
+      .nav-links a[aria-current="page"] {
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--white);
+      }
+
+      .header-cta {
+        display: inline-flex;
+        min-height: 42px;
+        align-items: center;
+        justify-content: center;
+        padding: 0 16px;
+        border-radius: var(--radius);
+        background: var(--gold);
+        color: var(--green-950);
+        font-weight: 900;
+        text-decoration: none;
+      }
+
+      .header-call {
+        display: inline-flex;
+        min-height: 42px;
+        align-items: center;
+        justify-content: center;
+        padding: 0 12px;
+        border: 1px solid rgba(255, 255, 255, 0.28);
+        border-radius: var(--radius);
+        color: var(--white);
+        font-size: 14px;
+        font-weight: 900;
+        text-decoration: none;
+      }
+
+      .menu-button {
+        display: none;
+        width: 44px;
+        height: 44px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.08);
+        color: var(--white);
+        cursor: pointer;
+      }
+
+      .menu-button span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin: 5px auto;
+        background: currentColor;
+      }
+
+      main {
+        min-height: 70vh;
+      }
+
+      .section {
+        padding: 76px 0;
+      }
+
+      .section.tight {
+        padding: 52px 0;
+      }
+
+      .band {
+        background: var(--paper-2);
+      }
+
+      .dark-band {
+        background: var(--green-950);
+        color: var(--white);
+      }
+
+      .container {
+        width: min(var(--max), calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .hero {
+        position: relative;
+        overflow: hidden;
+        min-height: calc(100vh - 74px);
+        background:
+          linear-gradient(90deg, rgba(16, 35, 25, 0.96) 0%, rgba(16, 35, 25, 0.82) 46%, rgba(16, 35, 25, 0.42) 100%),
+          linear-gradient(180deg, rgba(16, 35, 25, 0.12), rgba(16, 35, 25, 0.48)),
+          url("/assets/hero-rural-property.jpg") center / cover no-repeat;
+        color: var(--white);
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: auto 0 0;
+        height: 34%;
+        background:
+          linear-gradient(175deg, transparent 0 38%, rgba(16, 35, 25, 0.18) 39% 45%, transparent 46%),
+          repeating-linear-gradient(96deg, rgba(255, 255, 255, 0.18) 0 1px, transparent 1px 34px);
+        opacity: 0.42;
+        pointer-events: none;
+      }
+
+      .hero-grid {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        min-height: calc(100vh - 74px);
+        grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.72fr);
+        align-items: center;
+        gap: 48px;
+        padding: 72px 0 96px;
+      }
+
+      .hero h1,
+      .page-hero h1 {
+        max-width: 820px;
+        margin: 0;
+        font-size: clamp(44px, 7vw, 88px);
+        line-height: 0.95;
+        letter-spacing: 0;
+      }
+
+      .hero-brand-watermark {
+        width: 154px;
+        height: 154px;
+        margin-bottom: 26px;
+        border-radius: var(--radius);
+        background: var(--paper);
+        border: 1px solid rgba(255, 255, 255, 0.28);
+        object-fit: cover;
+        filter: drop-shadow(0 14px 26px rgba(0, 0, 0, 0.24));
+      }
+
+      .hero p,
+      .page-hero p {
+        max-width: 660px;
+        margin: 24px 0 0;
+        color: rgba(255, 255, 255, 0.88);
+        font-size: clamp(18px, 2.1vw, 22px);
+        line-height: 1.55;
+      }
+
+      .hero-actions,
+      .action-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 32px;
+      }
+
+      .button {
+        display: inline-flex;
+        min-height: 48px;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        padding: 0 18px;
+        border: 0;
+        border-radius: var(--radius);
+        background: var(--green-800);
+        color: var(--white);
+        font-weight: 900;
+        text-decoration: none;
+        cursor: pointer;
+        transition:
+          transform 160ms ease,
+          box-shadow 160ms ease,
+          background 160ms ease;
+      }
+
+      .button:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 10px 22px rgba(16, 35, 25, 0.18);
+      }
+
+      .button.gold {
+        background: var(--gold);
+        color: var(--green-950);
+      }
+
+      .button.light {
+        background: var(--white);
+        color: var(--green-950);
+      }
+
+      .button.ghost {
+        border: 1px solid rgba(255, 255, 255, 0.32);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .hero-card {
+        position: relative;
+        border: 1px solid rgba(255, 255, 255, 0.24);
+        border-radius: var(--radius);
+        background: rgba(251, 250, 244, 0.94);
+        color: var(--ink);
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.22);
+        overflow: hidden;
+      }
+
+      .hero-card-top {
+        position: relative;
+        min-height: 220px;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(16, 35, 25, 0.18)),
+          repeating-linear-gradient(103deg, rgba(255, 255, 255, 0.38) 0 2px, transparent 2px 28px),
+          linear-gradient(145deg, #86a85d 0%, #4f7c42 46%, #264b32 100%);
+      }
+
+      .hero-photo {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: saturate(0.88) contrast(1.02);
+      }
+
+      .hero-photo-shade {
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(180deg, rgba(16, 35, 25, 0.18), rgba(16, 35, 25, 0.42)),
+          linear-gradient(90deg, rgba(16, 35, 25, 0.22), transparent 55%);
+      }
+
+      .route-line {
+        position: absolute;
+        left: 9%;
+        right: 8%;
+        top: 76px;
+        height: 84px;
+        border: 4px solid rgba(247, 241, 223, 0.92);
+        border-left: 0;
+        border-bottom: 0;
+        border-radius: 0 28px 0 0;
+      }
+
+      .mower-icon {
+        position: absolute;
+        right: 12%;
+        top: 132px;
+        width: 86px;
+        height: 54px;
+        color: var(--green-950);
+      }
+
+      .trust-bar {
+        margin-top: -42px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .trust-grid {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 1px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--line);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      .trust-item {
+        min-height: 88px;
+        display: grid;
+        align-content: center;
+        gap: 3px;
+        padding: 16px;
+        background: var(--white);
+      }
+
+      .trust-item strong {
+        color: var(--green-950);
+        font-size: 15px;
+        line-height: 1.2;
+      }
+
+      .trust-item span {
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .hero-card-body {
+        padding: 24px;
+      }
+
+      .hero-card h2 {
+        margin: 0;
+        font-size: 26px;
+        line-height: 1.12;
+      }
+
+      .hero-card ul {
+        margin: 18px 0 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 10px;
+      }
+
+      .check {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+      }
+
+      .check svg {
+        width: 18px;
+        height: 18px;
+        flex: 0 0 auto;
+        margin-top: 3px;
+        color: var(--grass);
+      }
+
+      .intro-grid,
+      .split-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.9fr) minmax(300px, 0.62fr);
+        gap: 54px;
+        align-items: start;
+      }
+
+      .section h2,
+      .section h1 {
+        margin: 0;
+        color: var(--green-950);
+        font-size: clamp(32px, 4.2vw, 54px);
+        line-height: 1.05;
+        letter-spacing: 0;
+      }
+
+      .dark-band h2,
+      .dark-band h1 {
+        color: var(--white);
+      }
+
+      .lead {
+        max-width: 760px;
+        margin: 18px 0 0;
+        color: var(--muted);
+        font-size: 18px;
+      }
+
+      .dark-band .lead {
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      .service-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 34px;
+      }
+
+      .card {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--white);
+        box-shadow: 0 10px 24px rgba(16, 35, 25, 0.07);
+        overflow: hidden;
+      }
+
+      .card-body {
+        padding: 24px;
+      }
+
+      .card h3 {
+        margin: 0;
+        color: var(--green-950);
+        font-size: 22px;
+        line-height: 1.2;
+      }
+
+      .card p {
+        margin: 12px 0 0;
+        color: var(--muted);
+      }
+
+      .card a {
+        display: inline-flex;
+        margin-top: 18px;
+        color: var(--green-800);
+        font-weight: 900;
+        text-decoration: none;
+      }
+
+      .service-image {
+        height: 150px;
+        margin: 0;
+        background: var(--green-800);
+        overflow: hidden;
+      }
+
+      .service-image img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        filter: saturate(0.94) contrast(1.02);
+        transition: transform 240ms ease;
+      }
+
+      .card:hover .service-image img {
+        transform: scale(1.025);
+      }
+
+      .visual-strip {
+        height: 96px;
+        background:
+          linear-gradient(160deg, rgba(255, 255, 255, 0.15), transparent),
+          repeating-linear-gradient(95deg, rgba(255, 255, 255, 0.42) 0 2px, transparent 2px 26px),
+          var(--grass);
+      }
+
+      .visual-strip.rural {
+        background:
+          radial-gradient(circle at 76% 36%, rgba(214, 165, 72, 0.56), transparent 14%),
+          repeating-linear-gradient(102deg, rgba(255, 255, 255, 0.28) 0 2px, transparent 2px 30px),
+          linear-gradient(145deg, #788f48, #496e38);
+      }
+
+      .visual-strip.handyman {
+        background:
+          linear-gradient(135deg, rgba(16, 35, 25, 0.28), transparent),
+          repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.24) 0 2px, transparent 2px 18px),
+          #9b6a43;
+      }
+
+      .visual-strip.cleanup {
+        background:
+          radial-gradient(circle at 18% 42%, rgba(247, 241, 223, 0.52), transparent 13%),
+          repeating-linear-gradient(32deg, rgba(16, 35, 25, 0.18) 0 3px, transparent 3px 24px),
+          linear-gradient(145deg, #a77a42, #546a38);
+      }
+
+      .proof-list {
+        display: grid;
+        gap: 12px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .proof-list li {
+        padding: 18px;
+        border-left: 4px solid var(--gold);
+        background: rgba(255, 255, 255, 0.74);
+        border-radius: var(--radius);
+      }
+
+      .answer-block {
+        margin-top: 26px;
+        padding: 22px;
+        border: 1px solid rgba(49, 87, 62, 0.22);
+        border-radius: var(--radius);
+        background: rgba(148, 185, 105, 0.13);
+        color: var(--green-950);
+        font-weight: 800;
+      }
+
+      .page-hero {
+        background:
+          linear-gradient(90deg, rgba(16, 35, 25, 0.94), rgba(25, 54, 36, 0.76)),
+          linear-gradient(135deg, #31573e, #8fb066);
+        color: var(--white);
+        padding: 92px 0 72px;
+      }
+
+      .breadcrumbs {
+        margin-bottom: 18px;
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      .breadcrumbs a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .feature-list,
+      .plain-list {
+        display: grid;
+        gap: 12px;
+        margin: 24px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .feature-list li,
+      .plain-list li {
+        display: flex;
+        gap: 11px;
+        align-items: flex-start;
+      }
+
+      .feature-list li::before,
+      .plain-list li::before {
+        content: "";
+        width: 9px;
+        height: 9px;
+        flex: 0 0 auto;
+        margin-top: 9px;
+        border-radius: 50%;
+        background: var(--gold);
+      }
+
+      .route-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 34px;
+      }
+
+      .area-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 24px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .area-list li {
+        padding: 8px 11px;
+        border: 1px solid rgba(49, 87, 62, 0.18);
+        border-radius: var(--radius);
+        background: var(--white);
+        color: var(--green-900);
+        font-weight: 800;
+      }
+
+      .quote-panel {
+        position: sticky;
+        top: 100px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--white);
+        box-shadow: var(--shadow);
+      }
+
+      .quote-panel .card-body {
+        padding: 26px;
+      }
+
+      .field-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .form-field {
+        display: grid;
+        gap: 7px;
+        margin-bottom: 14px;
+      }
+
+      .form-field.full {
+        grid-column: 1 / -1;
+      }
+
+      label {
+        color: var(--green-950);
+        font-size: 13px;
+        font-weight: 900;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        min-height: 46px;
+        border: 1px solid rgba(24, 32, 25, 0.18);
+        border-radius: var(--radius);
+        background: var(--white);
+        color: var(--ink);
+        padding: 10px 12px;
+      }
+
+      textarea {
+        min-height: 116px;
+        resize: vertical;
+      }
+
+      input:focus,
+      select:focus,
+      textarea:focus,
+      button:focus-visible,
+      a:focus-visible {
+        outline: 3px solid rgba(214, 165, 72, 0.42);
+        outline-offset: 2px;
+      }
+
+      .field-error {
+        min-height: 18px;
+        color: #9a2f1d;
+        font-size: 12px;
+        font-weight: 800;
+      }
+
+      .form-note,
+      .success-message {
+        margin: 12px 0 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .success-message {
+        display: none;
+        padding: 12px;
+        border: 1px solid rgba(109, 141, 69, 0.3);
+        border-radius: var(--radius);
+        background: rgba(148, 185, 105, 0.14);
+        color: var(--green-900);
+        font-weight: 800;
+      }
+
+      .faq-list {
+        display: grid;
+        gap: 12px;
+        margin-top: 30px;
+      }
+
+      .faq-item {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--white);
+        overflow: hidden;
+      }
+
+      .faq-question {
+        width: 100%;
+        min-height: 58px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        border: 0;
+        background: transparent;
+        color: var(--green-950);
+        padding: 0 18px;
+        font-weight: 900;
+        text-align: left;
+        cursor: pointer;
+      }
+
+      .faq-answer {
+        display: none;
+        padding: 0 18px 18px;
+        color: var(--muted);
+      }
+
+      .faq-item.open .faq-answer {
+        display: block;
+      }
+
+      .blog-list {
+        display: grid;
+        gap: 16px;
+        margin-top: 34px;
+      }
+
+      .blog-card {
+        display: grid;
+        grid-template-columns: minmax(180px, 0.3fr) minmax(0, 1fr);
+        gap: 22px;
+        align-items: stretch;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--white);
+        overflow: hidden;
+      }
+
+      .blog-date {
+        display: grid;
+        place-items: center;
+        background: var(--green-800);
+        color: var(--white);
+        padding: 20px;
+        font-weight: 900;
+        text-align: center;
+      }
+
+      .blog-card .card-body {
+        padding: 24px 24px 24px 0;
+      }
+
+      .blog-outline {
+        margin-top: 14px;
+        padding-top: 14px;
+        border-top: 1px solid var(--line);
+      }
+
+      .blog-outline strong {
+        color: var(--green-950);
+      }
+
+      .blog-outline ul {
+        margin: 8px 0 0;
+        padding-left: 18px;
+        color: var(--muted);
+      }
+
+      .final-cta {
+        background:
+          linear-gradient(90deg, rgba(16, 35, 25, 0.95), rgba(37, 67, 50, 0.9)),
+          linear-gradient(135deg, #31573e, #9b5a2f);
+        color: var(--white);
+      }
+
+      .final-cta h2 {
+        color: var(--white);
+      }
+
+      .final-cta .lead {
+        color: rgba(255, 255, 255, 0.82);
+      }
+
+      .site-footer {
+        padding: 54px 0 86px;
+        background: var(--green-950);
+        color: var(--white);
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: minmax(260px, 0.8fr) repeat(3, minmax(150px, 1fr));
+        gap: 28px;
+      }
+
+      .footer-grid h2,
+      .footer-grid h3 {
+        margin: 0 0 12px;
+        font-size: 17px;
+      }
+
+      .footer-grid p,
+      .footer-grid a {
+        color: rgba(255, 255, 255, 0.76);
+      }
+
+      .footer-grid a {
+        display: block;
+        margin: 7px 0;
+        text-decoration: none;
+      }
+
+      .footer-small {
+        margin-top: 34px;
+        color: rgba(255, 255, 255, 0.62);
+        font-size: 13px;
+      }
+
+      .mobile-contact-bar {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 60;
+        display: none;
+        grid-template-columns: 1fr 1fr;
+        gap: 1px;
+        background: rgba(16, 35, 25, 0.22);
+        box-shadow: 0 -12px 30px rgba(16, 35, 25, 0.18);
+      }
+
+      .mobile-contact-bar a {
+        min-height: 58px;
+        display: grid;
+        place-items: center;
+        background: var(--gold);
+        color: var(--green-950);
+        font-weight: 900;
+        text-decoration: none;
+      }
+
+      .mobile-contact-bar a:last-child {
+        background: var(--green-800);
+        color: var(--white);
+      }
+
+      @media (max-width: 980px) {
+        .menu-button {
+          display: inline-block;
+        }
+
+        .nav-links {
+          position: fixed;
+          inset: 74px 0 auto;
+          display: none;
+          grid-template-columns: 1fr;
+          gap: 0;
+          padding: 14px 16px 20px;
+          background: var(--green-950);
+          border-top: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .nav-links.open {
+          display: grid;
+        }
+
+        .nav-links a {
+          padding: 14px 10px;
+        }
+
+        .header-cta,
+        .header-call {
+          display: none;
+        }
+
+        .hero-grid,
+        .intro-grid,
+        .split-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-grid {
+          min-height: auto;
+          padding: 62px 0 70px;
+        }
+
+        .hero {
+          min-height: auto;
+        }
+
+        .service-grid,
+        .route-grid,
+        .trust-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .quote-panel {
+          position: static;
+        }
+
+        .footer-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 680px) {
+        .nav-shell,
+        .container {
+          width: min(100% - 24px, var(--max));
+        }
+
+        .brand-name {
+          font-size: 16px;
+        }
+
+        .section {
+          padding: 58px 0;
+        }
+
+        .page-hero {
+          padding: 64px 0 54px;
+        }
+
+        .hero h1,
+        .page-hero h1 {
+          font-size: clamp(38px, 13vw, 58px);
+        }
+
+        .service-grid,
+        .route-grid,
+        .trust-grid,
+        .field-grid,
+        .footer-grid,
+        .blog-card {
+          grid-template-columns: 1fr;
+        }
+
+        .blog-card .card-body {
+          padding: 22px;
+        }
+
+        .mobile-contact-bar {
+          display: grid;
+        }
+
+        .site-footer {
+          padding-bottom: 104px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" data-header>
+      <div class="nav-shell">
+        <a class="brand-link" href="/" data-link aria-label="Pete's Lawn Service home">
+          <img class="logo-mark" src="/assets/pls-logo.png" alt="Pete's Lawn Service logo" width="900" height="900" />
+          <span>
+            <span class="brand-name">Pete's Lawn Service</span>
+            <span class="brand-place">Live Oak, Florida</span>
+          </span>
+        </a>
+        <nav class="nav-links" id="site-nav" aria-label="Main navigation"></nav>
+        <a class="header-call" href="tel:[INSERT PHONE NUMBER]">Call Pete</a>
+        <a class="header-cta" href="/contact" data-link>Request an Estimate</a>
+        <button class="menu-button" type="button" data-menu-button aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand-link" href="/" data-link>
+            <img class="logo-mark" src="/assets/pls-logo.png" alt="" width="900" height="900" />
+            <span>
+              <span class="brand-name">Pete's Lawn Service</span>
+              <span class="brand-place">Owner-operated lawn care</span>
+            </span>
+          </a>
+          <p>Practical mowing, acreage upkeep, seasonal cleanup, and small handyman help for Live Oak, FL and nearby rural properties.</p>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <a href="/lawn-mowing-live-oak-fl" data-link>Lawn mowing</a>
+          <a href="/acreage-mowing-live-oak-fl" data-link>Acreage mowing</a>
+          <a href="/handyman-services-live-oak-fl" data-link>Handyman help</a>
+          <a href="/services" data-link>All services</a>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <a href="/about" data-link>About Pete</a>
+          <a href="/service-area" data-link>Service area</a>
+          <a href="/blog" data-link>Blog</a>
+          <a href="/contact" data-link>Contact</a>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <!-- TODO: Replace [INSERT PHONE NUMBER] with Pete's real phone number before publishing. -->
+          <a href="tel:[INSERT PHONE NUMBER]">[INSERT PHONE NUMBER]</a>
+          <!-- TODO: Replace [INSERT EMAIL] with Pete's real email before publishing. -->
+          <a href="mailto:[INSERT EMAIL]">[INSERT EMAIL]</a>
+          <!-- TODO: Add Pete's publishable business address or remove address references before launch. -->
+          <p>Live Oak, FL</p>
+        </div>
+      </div>
+      <div class="container footer-small">© <span data-year></span> Pete's Lawn Service. Built as a static local-service website.</div>
+    </footer>
+    <div class="mobile-contact-bar" aria-label="Quick contact">
+      <a href="tel:[INSERT PHONE NUMBER]">Call</a>
+      <a href="/contact" data-link>Contact</a>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
